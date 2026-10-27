@@ -11,7 +11,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="30" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -35,61 +34,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1964078036175865" />
-      <entry key="MS500" value="2.3173941692089626" />
-      <entry key="S2" value="5.214333078385237" />
-      <entry key="S5" value="7.084189788482726" />
-      <entry key="S10" value="7.956774837836652" />
-      <entry key="S30" value="8.635788043468565" />
-      <entry key="S60" value="9.016874815849095" />
-      <entry key="M2" value="10.267405011616022" />
-      <entry key="M5" value="13.385549660559198" />
-      <entry key="M10" value="15.78150720442971" />
-      <entry key="M15" value="16.912706576528706" />
-      <entry key="M30" value="18.292654469765285" />
-      <entry key="H1" value="19.099393089580143" />
-      <entry key="H2" value="19.53709573473448" />
-      <entry key="H4" value="19.765280966785596" />
-      <entry key="D1" value="19.96041610645753" />
-      <entry key="W1" value="19.994333656025127" />
+      <entry key="MS100" value="3.836100386113975E-5" />
+      <entry key="MS500" value="0.13085128524682194" />
+      <entry key="S2" value="0.6014430326037814" />
+      <entry key="S5" value="0.8159804937340982" />
+      <entry key="S10" value="0.9090442197961833" />
+      <entry key="S30" value="2.7562435893643435" />
+      <entry key="S60" value="12.478515375197874" />
+      <entry key="M2" value="33.53283341214416" />
+      <entry key="M5" value="66.14307946862706" />
+      <entry key="M10" value="85.61588881129654" />
+      <entry key="M15" value="93.95501004386179" />
+      <entry key="M30" value="103.61824052336424" />
+      <entry key="H1" value="109.0634565703347" />
+      <entry key="H2" value="111.96576913637612" />
+      <entry key="H4" value="113.46577616334478" />
+      <entry key="D1" value="114.74186477563376" />
+      <entry key="W1" value="114.96306326207119" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0" />
+      <entry key="M30" value="1.0" />
+      <entry key="H1" value="1.0" />
+      <entry key="H2" value="1.0" />
+      <entry key="H4" value="1.0" />
+      <entry key="D1" value="1.0" />
+      <entry key="W1" value="1.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9190531997398209" />
-      <entry key="MS500" value="2.2088700939220094" />
-      <entry key="S2" value="5.164627504204697" />
-      <entry key="S5" value="7.058721467336525" />
-      <entry key="S10" value="7.942738105427822" />
-      <entry key="S30" value="8.63076888303849" />
-      <entry key="S60" value="9.014225682121669" />
-      <entry key="M2" value="10.26579398926318" />
-      <entry key="M5" value="13.384592079779727" />
-      <entry key="M10" value="15.780891829718291" />
-      <entry key="M15" value="16.91224992627102" />
-      <entry key="M30" value="18.29239648881867" />
-      <entry key="H1" value="19.099255114598552" />
-      <entry key="H2" value="19.537024264753693" />
-      <entry key="H4" value="19.7652445786769" />
-      <entry key="D1" value="19.960409948154048" />
-      <entry key="W1" value="19.994332773935817" />
+      <entry key="MS100" value="5.378930640791643E-5" />
+      <entry key="MS500" value="0.22404621276782147" />
+      <entry key="S2" value="1.151397695272398" />
+      <entry key="S5" value="1.603012085698382" />
+      <entry key="S10" value="1.796134059619193" />
+      <entry key="S30" value="3.715866362313639" />
+      <entry key="S60" value="13.454642223947223" />
+      <entry key="M2" value="34.516826519952005" />
+      <entry key="M5" value="67.13405847481657" />
+      <entry key="M10" value="86.6105639694566" />
+      <entry key="M15" value="94.95121950703127" />
+      <entry key="M30" value="104.61620179114631" />
+      <entry key="H1" value="110.06239569434157" />
+      <entry key="H2" value="112.96522746237522" />
+      <entry key="H4" value="114.46550239827937" />
+      <entry key="D1" value="115.74181873073121" />
+      <entry key="W1" value="115.9630566738621" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -109,7 +108,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;front-end&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
@@ -154,7 +153,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1793046931478</updated>
-      <workItem from="1793046938890" duration="1004000" />
+      <workItem from="1793046938890" duration="1833000" />
+      <workItem from="1793101110010" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

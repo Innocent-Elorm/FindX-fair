@@ -413,10 +413,10 @@ export default function Home() {
             </a>
             <div className="nav-links">
               <a className="nav-active" href="#top">Home</a>
-              <a href="#packages">Student Packages</a>
-              <a href="#shipping">International Shipping</a>
+              <a href="/packages">Student Packages</a>
+              <a href="/shipping">International Shipping</a>
               <a href="#request">Make a Request</a>
-              {/* <a href="#footer">Sell on FindX</a> */}
+              <a href="mailto:hello@findxfair.com?subject=Sell%20on%20FindX">Sell on FindX</a>
               <a href="#footer">Help</a>
             </div>
           </div>
@@ -489,7 +489,7 @@ export default function Home() {
                   <p>Curated packages for your academic and campus life needs.</p>
                 </div>
               </div>
-              <a className="text-link" href="#packages">View all packages <Icon name="arrow" size={15} /></a>
+              <a className="text-link" href="/packages">View all packages <Icon name="arrow" size={15} /></a>
             </div>
             <div className="product-grid">
               {products.map((product) => (
@@ -554,7 +554,7 @@ export default function Home() {
               <div>
                 <h2 id="shipping-heading">International shipping</h2>
                 <p>We ship selected items from trusted international stores to your doorstep.</p>
-                <a className="text-link" href="mailto:hello@findxfair.com?subject=International%20shipping">Learn more <Icon name="arrow" size={15} /></a>
+                <a className="text-link" href="/shipping">Learn more <Icon name="arrow" size={15} /></a>
               </div>
               <span className="shipping-orbit" aria-hidden="true"><Icon name="truck" size={24} /></span>
             </section>
