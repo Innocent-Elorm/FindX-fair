@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { useMemo, useState } from "react";
+import SiteFooter from "../components/site-footer";
 
 type IconName =
   | "arrow"
@@ -365,7 +366,7 @@ export default function ShippingStore() {
             <Icon name="heart" size={21} />
             {wishlist.length > 0 && <span className="cart-count">{wishlist.length}</span>}
           </button>
-          <Link className="header-icon account-icon" href="/#footer" aria-label="Your account">
+          <Link className="header-icon account-icon" href="/account" aria-label="Your account">
             <Icon name="user" size={21} />
             <span className="select-caret" aria-hidden="true">⌄</span>
           </Link>
@@ -382,9 +383,8 @@ export default function ShippingStore() {
               <Link className="nav-active" href="/shipping" aria-current="page">
                 International Shipping
               </Link>
-              <Link href="/#request">Make a Request</Link>
-              <a href="mailto:hello@findxfair.com?subject=Sell%20on%20FindX">Sell on FindX</a>
-              <a href="mailto:hello@findxfair.com?subject=FindX%20Fair%20help">Help</a>
+              <Link href="/request">Make a Request</Link>
+              <Link href="/help">Help</Link>
             </div>
           </div>
         </nav>
@@ -575,17 +575,7 @@ export default function ShippingStore() {
         </div>
       </main>
 
-      <footer className="shipping-footer">
-        <div className="page-width shipping-footer-inner">
-          <div><Icon name="globe" size={25} /><span><strong>Global Brands</strong><small>Authentic products from trusted sellers.</small></span></div>
-          <div><Icon name="shield" size={25} /><span><strong>Secure Payments</strong><small>Multiple payment options.</small></span></div>
-          <div><Icon name="truck" size={25} /><span><strong>Tracked Delivery</strong><small>Know where your order is, always.</small></span></div>
-          <div><Icon name="headphones" size={25} /><span><strong>Student Support</strong><small>We’re here to help, 24/7.</small></span></div>
-          <a className="button button-gold" href="#international-products">
-            Explore International Products <Icon name="arrow" size={16} />
-          </a>
-        </div>
-      </footer>
+      <SiteFooter />
 
       {cartOpen && (
         <div className="store-panel-layer">

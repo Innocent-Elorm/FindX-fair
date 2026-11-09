@@ -2,6 +2,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
+import SiteFooter from "./components/site-footer";
 import findxFairLogo from "../public/logo.jpeg";
 
 type IconName =
@@ -400,7 +401,7 @@ export default function Home() {
             <Icon name="heart" size={21} />
             {wishlist.length > 0 && <span className="cart-count">{wishlist.length}</span>}
           </button>
-          <a className="header-icon account-icon" href="#footer" aria-label="Your account">
+          <a className="header-icon account-icon" href="/account" aria-label="Your account">
             <Icon name="user" size={21} />
             <span className="select-caret" aria-hidden="true">⌄</span>
           </a>
@@ -415,9 +416,8 @@ export default function Home() {
               <a className="nav-active" href="#top">Home</a>
               <a href="/packages">Student Packages</a>
               <a href="/shipping">International Shipping</a>
-              <a href="#request">Make a Request</a>
-              <a href="mailto:hello@findxfair.com?subject=Sell%20on%20FindX">Sell on FindX</a>
-              <a href="#footer">Help</a>
+              <a href="/request">Make a Request</a>
+              <a href="/help">Help</a>
             </div>
           </div>
         </nav>
@@ -443,22 +443,15 @@ export default function Home() {
               <span><Icon name="shield" size={15} /> Trusted local sellers</span>
             </div>
           </div>
-          <div className="hero-art" aria-label="Illustration of a student ready for campus">
-            <div className="sun-shape" />
-            <div className="campus-building building-one"><span /><span /><span /></div>
-            <div className="campus-building building-two"><span /><span /><span /></div>
-            <div className="tree-shape tree-one" />
-            <div className="tree-shape tree-two" />
-            <div className="hero-note">Study smart.<br />Shop easy.<span>〰</span></div>
-            <div className="student-backpack" />
-            <div className="student">
-              <div className="student-hair" />
-              <div className="student-head"><span className="student-smile" /></div>
-              <div className="student-body"><span className="hoodie-string" /></div>
-              <div className="student-arm" />
-              <div className="student-phone"><span /></div>
-            </div>
-            <div className="hero-sticker"><strong>FindX</strong><span>campus<br />essentials</span><Icon name="arrow" size={17} /></div>
+          <div className="hero-art">
+            <Image
+              className="hero-student-image"
+              src="/student-hero.jpeg"
+              alt="A smiling student wearing a backpack and holding his phone on campus."
+              fill
+              priority
+              sizes="(max-width: 760px) 100vw, 50vw"
+            />
           </div>
         </section>
 
@@ -519,7 +512,7 @@ export default function Home() {
                     </div>
                     <button className="add-button" type="button" onClick={() => addToCart(product)}>
                       <Icon name="cart" size={16} />
-                      {cart.some((item) => item.product.id === product.id) ? "Add another" : "Add to cart"}
+                      <span>{cart.some((item) => item.product.id === product.id) ? "Add another" : "Add to cart"}</span>
                     </button>
                   </div>
                 </article>
@@ -539,7 +532,7 @@ export default function Home() {
                   <p>No problem! Tell us what you need and we’ll help you find it.</p>
                 </div>
               </div>
-              <a className="button button-gold request-button" href="mailto:hello@findxfair.com?subject=Product%20request">
+              <a className="button button-gold request-button" href="/request">
                 <Icon name="pencil" size={15} /> Make a request
               </a>
               <h3>How it works</h3>
@@ -570,12 +563,8 @@ export default function Home() {
           ))}
         </section>
 
-        <footer className="site-footer" id="footer">
-          <Brand footer />
-          <div className="footer-message"><span>More than a marketplace...</span><strong>it’s a student community.</strong><i /></div>
-          <a className="button button-gold footer-button" href="#packages">Start shopping <Icon name="arrow" size={16} /></a>
-        </footer>
       </main>
+      <div id="footer"><SiteFooter /></div>
       {activePanel && (
         <div className="store-panel-layer">
           <button

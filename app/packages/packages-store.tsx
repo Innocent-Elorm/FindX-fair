@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { useMemo, useState } from "react";
+import SiteFooter from "../components/site-footer";
 
 type IconName =
   | "arrow"
@@ -358,7 +359,7 @@ export default function PackagesStore() {
             <Icon name="heart" size={21} />
             {wishlist.length > 0 && <span className="cart-count">{wishlist.length}</span>}
           </button>
-          <Link className="header-icon account-icon" href="/#footer" aria-label="Your account">
+          <Link className="header-icon account-icon" href="/account" aria-label="Your account">
             <Icon name="user" size={21} />
             <span className="select-caret" aria-hidden="true">⌄</span>
           </Link>
@@ -373,9 +374,8 @@ export default function PackagesStore() {
               <Link href="/">Home</Link>
               <Link className="nav-active" href="/packages" aria-current="page">Student Packages</Link>
               <Link href="/shipping">International Shipping</Link>
-              <Link href="/#request">Make a Request</Link>
-              <a href="mailto:hello@findxfair.com?subject=Sell%20on%20FindX">Sell on FindX</a>
-              <a href="mailto:hello@findxfair.com?subject=FindX%20Fair%20help">Help</a>
+              <Link href="/request">Make a Request</Link>
+              <Link href="/help">Help</Link>
             </div>
           </div>
         </nav>
@@ -397,7 +397,7 @@ export default function PackagesStore() {
               <a className="button button-gold" href="#student-packages">
                 <Icon name="gift" size={17} /> Find your package
               </a>
-              <Link className="button button-outline" href="/#request">
+              <Link className="button button-outline" href="/request">
                 Need something else? <Icon name="arrow" size={15} />
               </Link>
             </div>
@@ -551,27 +551,13 @@ export default function PackagesStore() {
             <strong>Looking for something specific?</strong>
             <p>Tell us what you need for your course or campus and we’ll help you find it.</p>
           </div>
-          <Link className="button button-outline" href="/#request">
+          <Link className="button button-outline" href="/request">
             Make a request <Icon name="arrow" size={15} />
           </Link>
         </section>
 
-        <footer className="site-footer packages-footer" id="footer">
-          <Link className="brand brand-footer" href="/" aria-label="FindX Fair home">
-            <Image
-              src="/logo.jpeg"
-              alt="FindX Fair"
-              width={78}
-              height={78}
-              className="brand-logo-image"
-            />
-          </Link>
-          <div className="footer-message"><span>More than a marketplace...</span><strong>it’s a student community.</strong><i /></div>
-          <Link className="button button-gold footer-button" href="/shipping">
-            Explore international finds <Icon name="arrow" size={16} />
-          </Link>
-        </footer>
       </main>
+      <div id="footer"><SiteFooter /></div>
 
       {cartOpen && (
         <div className="store-panel-layer">
