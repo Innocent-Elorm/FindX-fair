@@ -446,11 +446,11 @@ export default function Home() {
           <div className="hero-art">
             <Image
               className="hero-student-image"
-              src="/student-hero.jpeg"
-              alt="A smiling student wearing a backpack and holding his phone on campus."
+              src="/student-campus-photo.jpg"
+              alt="University students collaborating at a computer in a campus lab."
               fill
               priority
-              sizes="(max-width: 760px) 100vw, 50vw"
+              sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1050px) calc(100vw - 40px), (max-width: 1440px) calc(100vw - 64px), 1360px"
             />
           </div>
         </section>
